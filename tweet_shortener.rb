@@ -1,3 +1,4 @@
+require 'pry'
 # Write your code here.
 def dictionary
   hash = {
@@ -18,6 +19,7 @@ def word_substituter(string)
   array = string.split(" ")
   newarray = []
   array.each do |word|
+
     if dictionary.keys.include?(word.downcase)
       newarray << dictionary[word.downcase]
     else
