@@ -19,7 +19,7 @@ def word_substituter(string)
   array = string.split(" ")
   newarray = []
   array.each do |word|
-
+    binding.pry
     if dictionary.keys.include?(word.downcase)
       newarray << dictionary[word.downcase]
     else
